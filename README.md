@@ -8,7 +8,7 @@ My wife was going out shopping with her friend, so I asked her to find me a used
 
 | Candidate 1 | Candidate 2 |
 | ----------- | ----------- |
-| [![Used musical turtle toy](images/Toy_with_buttons1.jpg)](images/Toy_with_buttons1.jpg) | [![Used baby toy](images/Toy_with_buttons2.jpg)](images/Toy_with_buttons2.jpg) |
+| [![Used musical turtle toy](images/Toy_with_buttons1_small.jpg)](images/Toy_with_buttons1.jpg) | [![Used baby toy](images/Toy_with_buttons2_small.jpg)](images/Toy_with_buttons2.jpg) |
 
 You can probably guess which one I picked.
 
@@ -18,7 +18,7 @@ Here's a couple of "before" photos.
 
 | Top | Bottom | Inside | Buttons |
 | --- | ------ | ------ | ------- |
-| [![Turtle toy top](images/Turtle_top.jpg)](images/Turtle_top.jpg) | [![Turtle toy bottom](images/Turtle_bottom.jpg)](images/Turtle_bottom.jpg) | [![Inside of turtle toy](images/Turtle_inside.jpg)](images/Turtle_inside.jpg) | [![Underneath the turtle's shell](images/Turtle_buttons.jpg)](images/Turtle_buttons.jpg) |
+| [![Turtle toy top](images/Turtle_top_small.jpg)](images/Turtle_top.jpg) | [![Turtle toy bottom](images/Turtle_bottom_small.jpg)](images/Turtle_bottom.jpg) | [![Inside of turtle toy](images/Turtle_inside_small.jpg)](images/Turtle_inside.jpg) | [![Underneath the turtle's shell](images/Turtle_buttons_small.jpg)](images/Turtle_buttons.jpg) |
 
 ## Technical details
 
