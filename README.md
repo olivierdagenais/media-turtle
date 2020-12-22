@@ -12,6 +12,14 @@ My wife was going out shopping with her friend, so I asked her to find me a used
 
 You can probably guess which one I picked.
 
+### What the toy looked like before I stated
+
+Here's a couple of "before" photos.
+
+| Top | Bottom | Inside | Buttons |
+| --- | ------ | ------ | ------- |
+| [![Turtle toy top](images/Turtle_top.jpg)](images/Turtle_top.jpg) | [![Turtle toy bottom](images/Turtle_bottom.jpg)](images/Turtle_bottom.jpg) | [![Inside of turtle toy](images/Turtle_inside.jpg)](images/Turtle_inside.jpg) | [![Underneath the turtle's shell](images/Turtle_buttons.jpg)](images/Turtle_buttons.jpg) |
+
 ## Technical details
 
 Uses [ELEGOO R3 Board ATmega328P ATMEGA16U2](https://www.elegoo.com/product/elegoo-uno-r3-board-atmega328p-atmega16u2-with-usb-cable/), pictured below:
