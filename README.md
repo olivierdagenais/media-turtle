@@ -4,7 +4,7 @@ An old turtle toy repurposed as a media control device.
 
 Uses [ELEGOO R3 Board ATmega328P ATMEGA16U2](https://www.elegoo.com/product/elegoo-uno-r3-board-atmega328p-atmega16u2-with-usb-cable/), pictured below:
 
-![An annotated picture of the ELEGOO R3 Board](images/ELEGOO_R3_Board.jpg)
+[![An annotated picture of the ELEGOO R3 Board](images/ELEGOO_R3_Board.jpg)](images/ELEGOO_R3_Board.jpg)
 
 ## MCU capabilities
 
