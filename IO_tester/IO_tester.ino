@@ -2,7 +2,7 @@
 // Licensed under the MIT license. See LICENSE in the project root.
 
 /*
- * A program to test the connections in the media-turtle.
+ * A program to test the connections in the media-turtle. Upload to the Arduino UNO (328P).
  */
 
 const int pwm[] = {
