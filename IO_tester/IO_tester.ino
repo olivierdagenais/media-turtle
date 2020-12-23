@@ -28,7 +28,7 @@ int fadeAmount = 5;
 const int analogCount = 2;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   for (int i = 0; i < inCount; i++) {
     int digitalPin = digitalIn[i];
     pinMode(digitalPin, INPUT_PULLUP);
