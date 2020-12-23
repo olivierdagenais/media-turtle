@@ -36,3 +36,44 @@ This project leverages the basic USB capabilities made possible by Arduino UNO-c
 | I/O pins   | ?      | 20     |
 | RAM        | 500b   | 2kb    |
 | Flash      | 16kb   | 32kb   |
+
+### Pin mappings
+
+Here's how the toy's buttons and lights were wired up to the `328P`'s I/O pins.  The `IO_tester` sketch validates that these are wired up correctly.
+
+| Category       | Name     | Color  | Connection    | Note   |
+| -------------- | -------- | ------ | ------------- | ------ |
+| Digital (PWM~) | 0->RX    |        |               |        |
+| Digital (PWM~) | 1->TX    |        |               |        |
+| Digital (PWM~) | 2        |        |               |        |
+| Digital (PWM~) | 3~       | Blue   | Xylophone     | Light  |
+| Digital (PWM~) | 4        | Yellow | Note          | Button |
+| Digital (PWM~) | 5~       | Orange | Violon        | Light  |
+| Digital (PWM~) | 6~       | Yellow | Piano         | Light  |
+| Digital (PWM~) | 7        | Green  | Harp          | Button |
+|                |          |        |               |        |
+| Digital (PWM~) | 8        | Yellow | Piano         | Button |
+| Digital (PWM~) | 9~       | White  | Drum          | Light  |
+| Digital (PWM~) | 10~      |        |               |        |
+| Digital (PWM~) | 11~      | Green  | Harp          | Light  |
+| Digital (PWM~) | 12       | White  | Drum          | Button |
+| Digital (PWM~) | 13       |        |               |        |
+|                | GND      |        |               |        |
+|                | AREF     |        |               |        |
+|                | (I2C)SDA |        |               |        |
+|                | (I2C)SCL |        |               |        |
+|                |          |        |               |        |
+|                | IOREF    |        |               |        |
+|                | RESET    |        |               |        |
+| Power          | 3.3V     |        |               |        |
+| Power          | 5V       |        |               |        |
+| Power          | GND      |        |               |        |
+| Power          | GND      | Blue   | Common ground |        |
+| Power          | Vin      |        |               |        |
+|                |          |        |               |        |
+| Analog In      | A0       | Blue   | Xylophone     | Button |
+| Analog In      | A1       | Orange | Violon        | Button |
+| Analog In      | A2       |        |               |        |
+| Analog In      | A3       |        |               |        |
+| Analog In      | A4       |        |               |        |
+| Analog In      | A5       |        |               |        |
