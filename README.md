@@ -104,3 +104,56 @@ graph LR;
     328P-->|Serial|16u2
     16u2-->|USB|Host
 ```
+
+### Implementation
+
+I created the `ButtonBase` class to encapsulate state and events related to a button, with `isPressed()` as "pure virtual" so I could abstract out the difference between buttons implemented using digital pins and analog pins.
+
+```c++
+class ButtonBase {
+  protected:
+    const char _character;
+    const uint8_t _buttonPin;
+    const uint8_t _ledPin;
+
+    volatile bool _currentButtonState;
+    virtual bool isPressed() = 0;
+
+  public:
+    void scan() {
+      bool newState = isPressed();
+      // compare to _currentButtonState
+      // optionally toggle the LED
+      // send the _character over the serial connection
+    }
+
+    ButtonBase(char character, uint8_t buttonPin, uint8_t ledPin) :
+      _character(character), _buttonPin(buttonPin), _ledPin(ledPin) {
+      // initialize other common parts
+    }
+};
+```
+
+The rest was matter of wiring up; you may notice how the "Pin mappings" table was used to associate the buttons with their corresponding LED (as applicable), as well as the character that would be written when the button is pressed.
+
+```c++
+const int NUM_BUTTONS = 6;
+ButtonBase * _buttons[NUM_BUTTONS];
+
+void setup() {
+  Serial.begin(115200);
+  _buttons[0] = new DigitalButton('0',  8,  6);
+  _buttons[1] = new DigitalButton('1', 12,  9);
+  _buttons[2] = new  AnalogButton('3',  1,  5);
+  _buttons[3] = new DigitalButton('4',  7, 11);
+  _buttons[4] = new DigitalButton('5',  4, -1);
+  _buttons[5] = new  AnalogButton('6',  0,  3);
+}
+
+void loop() {
+  for (uint8_t i = 0; i < NUM_BUTTONS; i++) {
+    _buttons[i]->scan();
+  }
+  delay(30);
+}
+```
