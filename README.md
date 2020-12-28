@@ -157,3 +157,9 @@ void loop() {
   delay(30);
 }
 ```
+
+## Potential improvements
+
+1. Rather than defining `-1` as the LED pin when a button has no LED, we could define a class to which we delegate button state changes, allowing us to better isolate the behaviors and compose them more elegantly.
+1. The `16u2_SerialToUsb` defines a super-simple protocol that passes through any character as a key press then a release. We could support pressing more keys at once, modifiers and matching the button press/release with the key press/release (which would give us the ability to repeat) if we augmented the protocol between the 2 MCUs to better match the Keyboard library's API.
+1. Although some of the Arduino's pins are sometimes reserved or overloaded (i.e. dual-purpose) in this particular case, it was probably not necessary to have two buttons based on the analog pins and all buttons could have been based on digital pins.
