@@ -12,7 +12,7 @@ My wife was going out shopping with her friend, so I asked her to find me a used
 
 You can probably guess which one I picked.
 
-### What the toy looked like before I stated
+### What the toy looked like before I started
 
 Here's a couple of "before" photos.
 
@@ -77,3 +77,11 @@ Here's how the toy's buttons and lights were wired up to the `328P`'s I/O pins. 
 | Analog In      | A3       |        |               |        |
 | Analog In      | A4       |        |               |        |
 | Analog In      | A5       |        |               |        |
+
+### What the toy looked liked midway through
+
+After I removed the old circuit board, soldered some extension cables, connected all the grounds together and plugged them into the Arduino's pins, this is what it looked like:
+
+| Digital side | Analog & power side | Ready to be closed up |
+| ------------ | ------------------- | --------------------- |
+| [![Digital side of the circuit board](images/Digital_side_small.jpg)](images/Digital_side.jpg) | [![Analog & power side](images/Analog_power_side_small.jpg)](images/Analog_power_side.jpg) | [![Ready to close](images/Ready_to_close_small.jpg)](images/Ready_to_close.jpg) |
