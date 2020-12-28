@@ -85,3 +85,20 @@ After I removed the old circuit board, soldered some extension cables, connected
 | Digital side | Analog & power side | Ready to be closed up |
 | ------------ | ------------------- | --------------------- |
 | [![Digital side of the circuit board](images/Digital_side_small.jpg)](images/Digital_side.jpg) | [![Analog & power side](images/Analog_power_side_small.jpg)](images/Analog_power_side.jpg) | [![Ready to close](images/Ready_to_close_small.jpg)](images/Ready_to_close.jpg) |
+
+## The software side
+
+### Design
+
+Unlike the Arduino Leonardo, we can't directly translate a button press into a USB key event: we need to write a sketch for the `328P` that detects button presses, relays them to the `16u2` over the serial connection between the 2 MCUs, then finally write a sketch for the `16u2` to convert instructions received from the `328P` into USB key presses for the host.
+
+### As a diagram
+
+A button press is detected by reading from a pin by the `328P`, it writes a character representing it to the serial port, the `16u2` sees the character and writes it to the USB keyboard:
+
+```mermaid
+graph LR;
+    button-->|Pin|328P
+    328P-->|Serial|16u2
+    16u2-->|USB|Host
+```
