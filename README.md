@@ -12,6 +12,8 @@ My wife was going out shopping with her friend, so I asked her to find me a used
 
 You can probably guess which one I picked.
 
+As you read through the rest, you may start to wonder why an Arduino Leonardo (which natively supports sending USB keyboard key presses to the host, among other things) wasn't used instead of the Arduino Uno (which does not).  That's mostly because I accidentally ordered an Arduino Uno and I figured I could work around the issue with software.  At first, I was going to write a program that runs on the host and listens for messages sent via the serial connection, but eventually I discovered that some awesome people had worked out how to reprogram one of the chips on the Arduino Uno so it could have its firmware flashed like the main chip.  This makes the solution more portable, on top of the geek credentials involved for [connecting two Arduinos together to update one with the other](https://github.com/NicoHood/HoodLoader2/wiki/Burn-the-bootloader-from-another-Arduino).
+
 ### What the toy looked like before I started
 
 Here's a couple of "before" photos.
