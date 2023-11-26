@@ -92,12 +92,12 @@ ButtonBase *_buttons[NUM_BUTTONS];
 
 void setup() {
     Serial.begin(115200);
-    _buttons[0] = new DigitalButton('0', 8, 6);
-    _buttons[1] = new DigitalButton('1', 12, 9);
-    _buttons[2] = new DigitalButton('3', 15, 5);
-    _buttons[3] = new DigitalButton('4', 7, 11);
-    _buttons[4] = new DigitalButton('5', 4, -1);
-    _buttons[5] = new DigitalButton('6', 14, 3);
+    _buttons[0] = new DigitalButton('0', 8, 6);  // piano     -> '0'
+    _buttons[1] = new DigitalButton('1', 12, 9); // drum      -> '1'
+    _buttons[2] = new DigitalButton('3', 15, 5); // violon    -> '3'
+    _buttons[3] = new DigitalButton('4', 7, 11); // harp      -> '4'
+    _buttons[4] = new DigitalButton('5', 4, -1); // note      -> '5'
+    _buttons[5] = new DigitalButton('6', 14, 3); // xylophone -> '6'
 }
 
 void loop() {
