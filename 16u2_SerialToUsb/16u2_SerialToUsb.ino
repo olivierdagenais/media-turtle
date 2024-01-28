@@ -45,7 +45,7 @@ void loop() {
             Consumer.write(MEDIA_PLAY_PAUSE);
             break;
           case '6': // xylophone
-            Consumer.write(MEDIA_PREVIOUS);
+            Consumer.write(MEDIA_NEXT);
             break;
         }
     }
