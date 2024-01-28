@@ -28,23 +28,23 @@ void loop() {
     int i = Serial1.read();
     if (i >= 0) {
         char c = (char)i;
-        switch(c) {
-          case '0': // piano
+        switch (c) {
+        case '0': // piano
             Consumer.write(MEDIA_PLAY_PAUSE);
             break;
-          case '1': // drum
+        case '1': // drum
             Consumer.write(MEDIA_REWIND);
             break;
-          case '3': // violon
+        case '3': // violon
             Consumer.write(MEDIA_FAST_FORWARD);
             break;
-          case '4': // harp
+        case '4': // harp
             Consumer.write(MEDIA_PREVIOUS);
             break;
-          case '5': // note
+        case '5': // note
             Consumer.write(MEDIA_PLAY_PAUSE);
             break;
-          case '6': // xylophone
+        case '6': // xylophone
             Consumer.write(MEDIA_NEXT);
             break;
         }
